@@ -138,9 +138,10 @@ export default function ColorTool() {
             <div className={"hex-input " + (hexValid ? "" : "invalid")}>
               <span className="hex-hash">#</span>
               <input
+                data-paste-target="primary"
                 value={hexInput}
                 onChange={(e) => onHexChange(e.target.value)}
-                placeholder="0A84FF or rgb(…) or hsl(…) or 'tomato'"
+                placeholder="0A84FF or rgb(…) or hsl(…)"
                 spellCheck="false"
                 autoComplete="off"
               />
